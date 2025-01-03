@@ -1,0 +1,173 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme-child/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 2.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Import Font Public Sans */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS Form */
+.form-custom #form-field-email{
+	height:60px;
+}
+.form-custom button.elementor-button.elementor-size-sm{
+	height:60px;
+}
+.form-custom .elementor-field-type-email.elementor-field-group.elementor-column.elementor-field-group-email.elementor-col-60.elementor-field-required{
+	width:62%;
+}
+.form-custom .elementor-field-group.elementor-column.elementor-field-type-submit.elementor-col-40.e-form__buttons{
+	width:38%;
+}
+.form-custom span.elementor-align-icon-right.elementor-button-icon{
+	position: absolute;
+    right: 30px;
+}
+.form-custom span.elementor-button-text{
+	padding-right:30px;
+}
+
+/* CSS Partner */
+.box-partner .slick-track{
+    display: flex;
+    align-items: center;
+}
+.box-partner .slick-track .box-item img{
+    margin: 0 auto;
+}
+
+/* CSS Team */
+.box-team{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px
+}
+.box-team .box-item{
+    position: relative;
+}
+.box-team .box-item .box-image{
+    background: #F5F1ED;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box-team .box-item .box-image img{
+    display: block;
+}
+.box-team .box-item .box-content{
+        position: absolute;
+    max-width: 271px;
+    width: 100%;
+    background: #fff;
+    top: 30px;
+    right: 20px;
+    height: auto;
+    padding: 50px 25px 30px;
+    border-radius: 4px;
+    min-height: 311px;
+}
+.box-team .box-item .box-content p{
+    font-family: 'Public Sans';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28.6px;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #080A24;
+    margin: 0;
+    margin-bottom: 35px;
+}
+.box-team .box-item:last-child .box-content p{
+    font-size: 21.5px;
+}
+.box-team .box-item .box-content h3{
+    font-family:'Public Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: -0.15px;
+    text-align: left;
+    color: #080A24;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.box-team .box-item .box-content label{
+     font-family:'Public Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+     margin: 0;
+}
+.box-team .box-item .box-content label span{
+    font-weight: 700;
+}
+.box-team .box-item .box-content:before{
+    content: "";
+    background-image: url('https://www.test.ilovedemellows.com/wp-content/uploads/2025/01/quote1.png');
+    width:38px;
+    height:38px;
+    background-size: cover;
+    position: absolute;
+    top: -19px;
+}
+.box-team .box-item:nth-child(2) .box-content:before{
+    background-image: url('https://www.test.ilovedemellows.com/wp-content/uploads/2025/01/quote2.png');
+}
+.box-team .box-item:nth-child(3) .box-content:before{
+    background-image: url('https://www.test.ilovedemellows.com/wp-content/uploads/2025/01/quote3.png');
+}
+
+/* CSS Responsive */
+
+@media (max-width:1470px){
+	.button-custom a.elementor-button.elementor-button-link.elementor-size-sm{
+		font-size:13px;
+	}
+	.section-menu .elementor-nav-menu--main .elementor-nav-menu a,.section-menu .elementor-nav-menu--main .elementor-nav-menu a.highlighted,.section-menu .elementor-nav-menu--main .elementor-nav-menu a:focus,.section-menu .elementor-nav-menu--main .elementor-nav-menu a:hover{
+		padding: 13px 13px;
+	}
+}
+
+@media (max-width:1024px){
+	.section-menu .elementor-nav-menu--toggle .elementor-menu-toggle.elementor-active+.elementor-nav-menu__container{
+		top:60px !important;
+	}
+	.box-team{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width:767px){
+	.form-custom .elementor-field-type-email.elementor-field-group.elementor-column.elementor-field-group-email.elementor-col-60.elementor-field-required{
+		width:100%;
+	}
+	.form-custom .elementor-field-group.elementor-column.elementor-field-type-submit.elementor-col-40.e-form__buttons{
+		width:100%;
+	}
+	.form-custom #form-field-email{
+		height:45px;
+	}
+	.form-custom button.elementor-button.elementor-size-sm{
+		height:45px;
+	}
+	.box-team{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.box-team .box-item .box-content p,
+	.box-team .box-item:last-child .box-content p{
+		font-size:20px;
+		line-height:26px;
+	}
+	.box-partner .slick-track{
+		gap:30px;
+	}
+}
